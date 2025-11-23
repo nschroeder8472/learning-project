@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.learning'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit 5
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // AssertJ for fluent assertions (optional but helpful)
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+}
+
+// Allow running individual main classes
+application {
+    // Default main class (can be overridden with --main-class)
+    mainClass = 'com.learning.Main'
+}

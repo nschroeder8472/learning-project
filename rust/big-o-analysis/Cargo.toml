@@ -1,0 +1,7 @@
+[package]
+name = "big-o-analysis"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]

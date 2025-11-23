@@ -1,0 +1,18 @@
+[workspace]
+members = [
+    "data-structures",
+    "algorithms",
+    "big-o-analysis",
+    "design-patterns",
+    "concurrency",
+    "system-design",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Learning Project"]
+
+[workspace.dependencies]
+# Common dependencies can be shared across workspace members
