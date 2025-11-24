@@ -1,1 +1,1 @@
-C:\Users\nschr\IdeaProjects\learning-project\rust\target\debug\libdesign_patterns.rlib: C:\Users\nschr\IdeaProjects\learning-project\rust\design-patterns\src\lib.rs
+/Users/niklausschroeder/IdeaProjects/learning-project/rust/target/debug/libdesign_patterns.rlib: /Users/niklausschroeder/IdeaProjects/learning-project/rust/design-patterns/src/lib.rs
