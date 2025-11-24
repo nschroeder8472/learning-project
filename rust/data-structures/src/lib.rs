@@ -4,5 +4,5 @@
 pub mod arrays;
 pub mod linked_lists;
 pub mod trees;
+pub mod hash_tables;
 // Future modules will be added here:
-// pub mod hash_tables;

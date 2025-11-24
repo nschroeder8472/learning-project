@@ -26,13 +26,26 @@ A multi-language learning repository for data structures, algorithms, and softwa
   - Java: 6 exercises + 6 test files + README
   - Python: 6 exercises + 6 test files + README
   - Rust: 6 exercises (with embedded tests) + README
+- [x] **Linked Lists** - Complete for all 3 languages
+  - Java: 7 exercises + 7 test files + README
+  - Python: 7 exercises + 7 test files + README
+  - Rust: 7 exercises (with embedded tests) + README
+- [x] **Trees** - Complete for all 3 languages
+  - Java: 7 exercises + 7 test files + README
+  - Python: 7 exercises + 7 test files + README
+  - Rust: 7 exercises (with embedded tests) + README
+- [x] **Hash Tables** - Complete for all 3 languages
+  - Java: 6 exercises + 6 test files + README
+  - Python: 6 exercises + 6 test files + README
+  - Rust: 6 exercises (with embedded tests) + README
+
+#### Recent Updates
+- **2025-11-23**: Hash Tables completed for all 3 languages (6 exercises each)
+- **2025-11-23**: File naming standardized to `ex<number>_` format across all languages
+- **2025-11-23**: All data structure exercises (Arrays, Linked Lists, Trees) renamed and updated
+- **2025-11-23**: Module files updated (mod.rs in Rust, test imports in Python/Java)
 
 ### 📋 Remaining Work
-
-#### Data Structures (3 topics)
-1. Linked Lists (singly & doubly linked)
-2. Trees (BST, traversals, validation)
-3. Hash Tables (hash functions, collision handling)
 
 #### Algorithms (4 topics)
 4. Sorting (bubble, selection, merge, quick)
@@ -54,6 +67,29 @@ A multi-language learning repository for data structures, algorithms, and softwa
 
 Each topic should follow this exact pattern across all three languages:
 
+#### 0. File Naming Conventions
+
+**IMPORTANT**: All exercise files must be numbered to indicate the order they should be solved.
+
+**Java**:
+- Exercise files: `ex<number>_<PascalCase>.java` (e.g., `ex1_FindMaxElement.java`, `ex2_ReverseArray.java`)
+- Test files: `ex<number><PascalCaseNoUnderscore>Test.java` (e.g., `ex1FindMaxElementTest.java`, `ex2ReverseArrayTest.java`)
+- Numbering starts at 1
+
+**Python**:
+- Exercise files: `ex<number>_<snake_case>.py` (e.g., `ex1_find_max_element.py`, `ex2_reverse_array.py`)
+- Test files: `test_ex<number>_<snake_case>.py` (e.g., `test_ex1_find_max_element.py`, `test_ex2_reverse_array.py`)
+- Imports: `from package.module.ex<number>_<name> import function_name`
+- Numbering starts at 1
+- **Note**: Python module names cannot start with digits, hence the `ex` prefix
+
+**Rust**:
+- Exercise files: `ex<number>_<snake_case>.rs` (e.g., `ex1_find_max_element.rs`, `ex2_reverse_array.rs`)
+- Module declarations in `mod.rs`: `pub mod ex<number>_<snake_case>;` (e.g., `pub mod ex1_find_max_element;`)
+- **Note**: The underscore prefix is required in both file names and module declarations because Rust module names cannot start with digits
+- Tests are embedded in the same file using `#[cfg(test)] mod tests`
+- Numbering starts at 1
+
 #### 1. README.md
 Location: `<language>/<category>/<topic>/README.md`
 
@@ -69,14 +105,14 @@ Pattern established (see Arrays implementation):
 
 **Java**:
 - Location: `java/src/main/java/com/learning/<category>/<topic>/`
-- File naming: `PascalCase.java` (e.g., `FindMaxElement.java`)
+- File naming: `ex<number>_<PascalCase>.java` (see section 0 above)
 - Class structure: One public class per file
 - Documentation: Javadoc with problem description, examples, time/space complexity
 - Implementation: Methods throw `UnsupportedOperationException("Not implemented yet")`
 
 **Python**:
 - Location: `python/<category>/<topic>/`
-- File naming: `snake_case.py` (e.g., `find_max_element.py`)
+- File naming: `ex<number>_<snake_case>.py` (see section 0 above)
 - Function structure: Module-level functions with type hints
 - Documentation: Docstrings with problem description, examples, complexity
 - Implementation: Functions raise `NotImplementedError("Not implemented yet")`
@@ -84,7 +120,7 @@ Pattern established (see Arrays implementation):
 
 **Rust**:
 - Location: `rust/<crate-name>/src/<topic>/`
-- File naming: `snake_case.rs` (e.g., `find_max_element.rs`)
+- File naming: `ex<number>_<snake_case>.rs` (see section 0 above)
 - Module structure: Public functions, tests in same file with `#[cfg(test)]`
 - Documentation: `///` doc comments with examples, complexity
 - Implementation: Functions use `unimplemented!("Not implemented yet")`
@@ -93,14 +129,14 @@ Pattern established (see Arrays implementation):
 
 **Java**:
 - Location: `java/src/test/java/com/learning/<category>/<topic>/`
-- File naming: `ClassNameTest.java`
+- File naming: `ex<number><PascalCaseNoUnderscore>Test.java` (see section 0 above)
 - Framework: JUnit 5 with `@Test`, `@BeforeEach` annotations
 - Assertions: Use both JUnit assertions and AssertJ where helpful
 - Coverage: 5-8 test methods per exercise covering edge cases
 
 **Python**:
 - Location: `python/tests/<category>/<topic>/`
-- File naming: `test_<module_name>.py`
+- File naming: `test_ex<number>_<snake_case>.py` (see section 0 above)
 - Framework: pytest
 - Assertions: Use assert statements
 - Coverage: 5-8 test functions per exercise covering edge cases
@@ -568,9 +604,9 @@ java/
     ├── main/java/com/learning/
     │   ├── datastructures/
     │   │   ├── arrays/          ✅ COMPLETE
-    │   │   ├── linkedlists/     ⬜ TODO
-    │   │   ├── trees/           ⬜ TODO
-    │   │   └── hashtables/      ⬜ TODO
+    │   │   ├── linkedlists/     ✅ COMPLETE
+    │   │   ├── trees/           ✅ COMPLETE
+    │   │   └── hashtables/      ✅ COMPLETE
     │   ├── algorithms/
     │   │   ├── sorting/         ⬜ TODO
     │   │   ├── searching/       ⬜ TODO
@@ -594,11 +630,12 @@ python/
 │   ├── __init__.py
 │   ├── arrays/              ✅ COMPLETE
 │   │   ├── __init__.py
-│   │   ├── find_max_element.py
+│   │   ├── ex1_find_max_element.py
+│   │   ├── ex2_reverse_array.py
 │   │   └── ...
-│   ├── linked_lists/        ⬜ TODO
-│   ├── trees/               ⬜ TODO
-│   └── hash_tables/         ⬜ TODO
+│   ├── linked_lists/        ✅ COMPLETE
+│   ├── trees/               ✅ COMPLETE
+│   └── hash_tables/         ✅ COMPLETE
 ├── algorithms/
 │   ├── __init__.py
 │   ├── sorting/             ⬜ TODO
@@ -622,12 +659,13 @@ rust/
 │   └── src/
 │       ├── lib.rs
 │       ├── arrays/          ✅ COMPLETE
-│       │   ├── mod.rs
-│       │   ├── find_max_element.rs
+│       │   ├── mod.rs (contains: pub mod ex1_find_max_element; ...)
+│       │   ├── ex1_find_max_element.rs
+│       │   ├── ex2_reverse_array.rs
 │       │   └── ...
-│       ├── linked_lists/    ⬜ TODO
-│       ├── trees/           ⬜ TODO
-│       └── hash_tables/     ⬜ TODO
+│       ├── linked_lists/    ✅ COMPLETE
+│       ├── trees/           ✅ COMPLETE
+│       └── hash_tables/     ✅ COMPLETE
 ├── algorithms/
 │   ├── Cargo.toml
 │   └── src/
@@ -651,18 +689,18 @@ The Arrays topic has been fully implemented and serves as the reference template
 ### Key Files to Reference:
 
 **Java Example:**
-- Exercise: `java/src/main/java/com/learning/datastructures/arrays/FindMaxElement.java`
-- Test: `java/src/test/java/com/learning/datastructures/arrays/FindMaxElementTest.java`
+- Exercise: `java/src/main/java/com/learning/datastructures/arrays/ex1_FindMaxElement.java`
+- Test: `java/src/test/java/com/learning/datastructures/arrays/ex1FindMaxElementTest.java`
 - README: `java/src/main/java/com/learning/datastructures/arrays/README.md`
 
 **Python Example:**
-- Exercise: `python/data_structures/arrays/find_max_element.py`
-- Test: `python/tests/data_structures/arrays/test_find_max_element.py`
+- Exercise: `python/data_structures/arrays/ex1_find_max_element.py`
+- Test: `python/tests/data_structures/arrays/test_ex1_find_max_element.py`
 - README: `python/data_structures/arrays/README.md`
 
 **Rust Example:**
-- Exercise: `rust/data-structures/src/arrays/find_max_element.rs`
-- Module: `rust/data-structures/src/arrays/mod.rs`
+- Exercise: `rust/data-structures/src/arrays/ex1_find_max_element.rs`
+- Module: `rust/data-structures/src/arrays/mod.rs` (declares `pub mod ex1_find_max_element;`)
 - README: `rust/data-structures/src/arrays/README.md`
 
 ### Exercise Difficulty Distribution
@@ -760,8 +798,10 @@ When implementing topics:
 ## Summary Statistics
 
 **Total Topics:** 11
-**Completed:** 1 (Arrays)
-**Remaining:** 10
+**Completed:** 4 (Arrays, Linked Lists, Trees, Hash Tables)
+**Remaining:** 7
+
+**Data Structures:** ✅ **COMPLETE** (All 4 fundamental data structures implemented)
 
 **Total Estimated Files to Create:**
 - Exercise files: ~180 (60 per language × 3 languages)
@@ -777,5 +817,5 @@ When implementing topics:
 ---
 
 **Last Updated:** 2025-11-23
-**Status:** Arrays complete, 10 topics remaining
-**Next Recommended Topic:** Linked Lists (foundational for understanding pointers/references)
+**Status:** All data structures complete (Arrays, Linked Lists, Trees, Hash Tables), 7 topics remaining
+**Next Recommended Topic:** Sorting Algorithms (begins the algorithms section)

@@ -25,6 +25,7 @@ learning-project/
 
 Each topic contains:
 - Exercise template files (with TODO markers for implementation)
+  - Naming: `ex<number>_DescriptiveName` (e.g., `ex1_FindMaxElement.java`, `ex2_reverse_array.py`)
 - Test files to verify correctness
 - README explaining concepts and exercises
 
@@ -117,3 +118,4 @@ cargo run --bin exercise_name
 - Each exercise should have corresponding test files
 - Intermediate depth for data structures (include variants like doubly-linked lists, balanced trees)
 - This is a learning environment - prioritize clarity and educational value over production-level optimization
+- While building projects, do not build and test exercises 
