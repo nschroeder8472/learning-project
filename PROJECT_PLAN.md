@@ -39,7 +39,14 @@ A multi-language learning repository for data structures, algorithms, and softwa
   - Python: 6 exercises + 6 test files + README
   - Rust: 6 exercises (with embedded tests) + README
 
+#### Algorithms
+- [x] **Sorting** - Complete for all 3 languages
+  - Java: 4 exercises + 4 test files + README
+  - Python: 4 exercises + 4 test files + README
+  - Rust: 4 exercises (with embedded tests) + README
+
 #### Recent Updates
+- **2025-11-26**: Sorting Algorithms completed for all 3 languages (4 exercises each: bubble, selection, merge, quick)
 - **2025-11-23**: Hash Tables completed for all 3 languages (6 exercises each)
 - **2025-11-23**: File naming standardized to `ex<number>_` format across all languages
 - **2025-11-23**: All data structure exercises (Arrays, Linked Lists, Trees) renamed and updated
@@ -47,8 +54,7 @@ A multi-language learning repository for data structures, algorithms, and softwa
 
 ### 📋 Remaining Work
 
-#### Algorithms (4 topics)
-4. Sorting (bubble, selection, merge, quick)
+#### Algorithms (3 topics)
 5. Searching (linear, binary, variants)
 6. Dynamic Programming (fibonacci, coin change, LCS, edit distance)
 7. Graph Traversal (BFS, DFS, Dijkstra, topological sort)
