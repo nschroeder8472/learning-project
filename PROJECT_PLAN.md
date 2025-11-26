@@ -48,8 +48,13 @@ A multi-language learning repository for data structures, algorithms, and softwa
   - Java: 5 exercises + 5 test files + README
   - Python: 5 exercises + 5 test files + README
   - Rust: 5 exercises (with embedded tests) + README
+- [x] **Dynamic Programming** - Complete for all 3 languages
+  - Java: 6 exercises + 6 test files + README
+  - Python: 6 exercises + 6 test files + README
+  - Rust: 6 exercises (with embedded tests) + README
 
 #### Recent Updates
+- **2025-11-26**: Dynamic Programming completed for all 3 languages (6 exercises each: fibonacci, climbing stairs, coin change, LCS, house robber, edit distance)
 - **2025-11-26**: Searching Algorithms completed for all 3 languages (5 exercises each: linear, binary, rotated array, peak element, median)
 - **2025-11-26**: Sorting Algorithms completed for all 3 languages (4 exercises each: bubble, selection, merge, quick)
 - **2025-11-23**: Hash Tables completed for all 3 languages (6 exercises each)
@@ -59,8 +64,7 @@ A multi-language learning repository for data structures, algorithms, and softwa
 
 ### 📋 Remaining Work
 
-#### Algorithms (2 topics)
-6. Dynamic Programming (fibonacci, coin change, LCS, edit distance)
+#### Algorithms (1 topic)
 7. Graph Traversal (BFS, DFS, Dijkstra, topological sort)
 
 #### Additional Topics (4 topics)
@@ -620,7 +624,7 @@ java/
     │   ├── algorithms/
     │   │   ├── sorting/         ✅ COMPLETE
     │   │   ├── searching/       ✅ COMPLETE
-    │   │   ├── dynamicprogramming/  ⬜ TODO
+    │   │   ├── dynamicprogramming/  ✅ COMPLETE
     │   │   └── graphtraversal/  ⬜ TODO
     │   ├── biganalysis/         ⬜ TODO
     │   ├── designpatterns/      ⬜ TODO
@@ -650,7 +654,7 @@ python/
 │   ├── __init__.py
 │   ├── sorting/             ✅ COMPLETE
 │   ├── searching/           ✅ COMPLETE
-│   ├── dynamic_programming/ ⬜ TODO
+│   ├── dynamic_programming/ ✅ COMPLETE
 │   └── graph_traversal/     ⬜ TODO
 ├── big_o_analysis/          ⬜ TODO
 ├── design_patterns/         ⬜ TODO
@@ -682,7 +686,7 @@ rust/
 │       ├── lib.rs
 │       ├── sorting/         ✅ COMPLETE
 │       ├── searching/       ✅ COMPLETE
-│       ├── dynamic_programming/  ⬜ TODO
+│       ├── dynamic_programming/  ✅ COMPLETE
 │       └── graph_traversal/ ⬜ TODO
 ├── big-o-analysis/          ⬜ TODO
 ├── design-patterns/         ⬜ TODO
@@ -808,11 +812,11 @@ When implementing topics:
 ## Summary Statistics
 
 **Total Topics:** 11
-**Completed:** 6 (Arrays, Linked Lists, Trees, Hash Tables, Sorting, Searching)
-**Remaining:** 5
+**Completed:** 7 (Arrays, Linked Lists, Trees, Hash Tables, Sorting, Searching, Dynamic Programming)
+**Remaining:** 4
 
 **Data Structures:** ✅ **COMPLETE** (All 4 fundamental data structures implemented)
-**Algorithms:** 🔄 **IN PROGRESS** (2 of 4 algorithm topics complete: Sorting, Searching)
+**Algorithms:** 🔄 **IN PROGRESS** (3 of 4 algorithm topics complete: Sorting, Searching, Dynamic Programming)
 
 **Total Estimated Files to Create:**
 - Exercise files: ~180 (60 per language × 3 languages)
@@ -828,5 +832,5 @@ When implementing topics:
 ---
 
 **Last Updated:** 2025-11-26
-**Status:** All data structures complete + 2 algorithm topics (Sorting, Searching), 5 topics remaining
-**Next Recommended Topic:** Dynamic Programming or Big O Analysis
+**Status:** All data structures complete + 3 algorithm topics (Sorting, Searching, Dynamic Programming), 4 topics remaining
+**Next Recommended Topic:** Graph Traversal or Big O Analysis
