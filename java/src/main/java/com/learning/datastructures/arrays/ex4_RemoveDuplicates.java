@@ -1,5 +1,7 @@
 package com.learning.datastructures.arrays;
 
+import java.util.Arrays;
+
 /**
  * Exercise: Remove Duplicates from Sorted Array (Medium)
  *
@@ -16,10 +18,18 @@ package com.learning.datastructures.arrays;
 public class ex4_RemoveDuplicates {
 
     public int removeDuplicates(int[] arr) {
-        // TODO: Implement this method
-        // Edge case: handle empty array
-        // Hint: Use two pointers - one for reading, one for writing
-        // Only write when you find a different element
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (arr == null || arr.length == 0)
+            return 0;
+        if (arr.length == 1)
+            return 1;
+
+        int writeIndex = 1;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] != arr[i - 1]) {
+                arr[writeIndex] = arr[i];
+                writeIndex++;
+            }
+        }
+        return writeIndex;
     }
 }

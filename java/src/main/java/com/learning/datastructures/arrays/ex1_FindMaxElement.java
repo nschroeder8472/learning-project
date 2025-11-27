@@ -18,6 +18,13 @@ public class ex1_FindMaxElement {
         // TODO: Implement this method
         // Edge case: handle empty or null array
         // Hint: Keep track of the maximum value seen so far while iterating
-        throw new UnsupportedOperationException("Not implemented yet");
+        if(arr == null || arr.length == 0)
+            throw new RuntimeException("array is null or empty");
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max)
+                max = arr[i];
+        }
+        return max;
     }
 }

@@ -15,9 +15,12 @@ package com.learning.datastructures.arrays;
 public class ex2_ReverseArray {
 
     public void reverse(int[] arr) {
-        // TODO: Implement this method
-        // Hint: Use two pointers, one at start and one at end
-        // Swap elements and move pointers toward center
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (arr == null || arr.length == 0)
+            return;
+        for(int i = 0; i < arr.length/2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
     }
 }

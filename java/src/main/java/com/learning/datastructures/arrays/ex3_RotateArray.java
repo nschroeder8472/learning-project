@@ -1,5 +1,7 @@
 package com.learning.datastructures.arrays;
 
+import java.util.Arrays;
+
 /**
  * Exercise: Rotate Array (Medium)
  *
@@ -15,11 +17,34 @@ package com.learning.datastructures.arrays;
 public class ex3_RotateArray {
 
     public void rotate(int[] arr, int k) {
-        // TODO: Implement this method
-        // Edge case: k might be larger than array length
-        // Hint: Reverse the entire array, then reverse first k elements,
-        //       then reverse remaining elements
-        // Alternative: Use the cyclic replacement approach
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (arr == null || arr.length == 0)
+            return;
+
+        k = k % arr.length;
+
+        if (k == 0)
+            return;
+
+        System.out.println(Arrays.toString(arr));
+
+        reverseArraySegment(arr, 0, arr.length - 1);
+        System.out.println(Arrays.toString(arr));
+
+        reverseArraySegment(arr, 0, k - 1);
+        System.out.println(Arrays.toString(arr));
+
+        reverseArraySegment(arr, k, arr.length - 1);
+        System.out.println(Arrays.toString(arr));
+    }
+    private void reverseArraySegment(int[] arr, int startIndex, int endIndex) {
+        int left = startIndex;
+        int right = endIndex;
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
     }
 }
