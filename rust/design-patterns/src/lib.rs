@@ -1,14 +1,9 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+// Design Patterns Learning Module
+// Contains implementations of various design patterns
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub mod ex1_singleton;
+pub mod ex2_factory;
+pub mod ex3_decorator;
+pub mod ex4_adapter;
+pub mod ex5_observer;
+pub mod ex6_strategy;

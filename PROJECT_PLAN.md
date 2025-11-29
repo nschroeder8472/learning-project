@@ -57,7 +57,14 @@ A multi-language learning repository for data structures, algorithms, and softwa
   - Python: 6 exercises + 6 test files + README
   - Rust: 6 exercises (with embedded tests) + README
 
+#### Additional Topics
+- [x] **Design Patterns** - Complete for all 3 languages
+  - Java: 6 patterns + 6 test files + README (Singleton, Factory, Decorator, Adapter, Observer, Strategy)
+  - Python: 6 patterns + 6 test files + README
+  - Rust: 6 patterns (with embedded tests) + README
+
 #### Recent Updates
+- **2025-11-29**: Design Patterns completed for all 3 languages (6 patterns each: Singleton, Factory, Decorator, Adapter, Observer, Strategy)
 - **2025-11-27**: Graph Traversal completed for all 3 languages (6 exercises each: DFS, BFS, number of islands, course schedule, clone graph, Dijkstra)
 - **2025-11-26**: Dynamic Programming completed for all 3 languages (6 exercises each: fibonacci, climbing stairs, coin change, LCS, house robber, edit distance)
 - **2025-11-26**: Searching Algorithms completed for all 3 languages (5 exercises each: linear, binary, rotated array, peak element, median)
@@ -72,11 +79,10 @@ A multi-language learning repository for data structures, algorithms, and softwa
 #### Algorithms
 ✅ **ALL ALGORITHM TOPICS COMPLETE**
 
-#### Additional Topics (4 topics)
+#### Additional Topics (3 topics remaining)
 1. Big O Analysis (complexity analysis exercises)
-2. Design Patterns (Singleton, Factory, Observer, Strategy, Decorator)
-3. Concurrency (threading, synchronization, async patterns)
-4. System Design (case studies with discussion prompts)
+2. Concurrency (threading, synchronization, async patterns)
+3. System Design (case studies with discussion prompts)
 
 ---
 
@@ -630,9 +636,9 @@ java/
     │   │   ├── sorting/         ✅ COMPLETE
     │   │   ├── searching/       ✅ COMPLETE
     │   │   ├── dynamicprogramming/  ✅ COMPLETE
-    │   │   └── graphtraversal/  ⬜ TODO
+    │   │   └── graphtraversal/  ✅ COMPLETE
     │   ├── biganalysis/         ⬜ TODO
-    │   ├── designpatterns/      ⬜ TODO
+    │   ├── designpatterns/      ✅ COMPLETE
     │   ├── concurrency/         ⬜ TODO
     │   └── systemdesign/        ⬜ TODO
     └── test/java/com/learning/
@@ -660,9 +666,9 @@ python/
 │   ├── sorting/             ✅ COMPLETE
 │   ├── searching/           ✅ COMPLETE
 │   ├── dynamic_programming/ ✅ COMPLETE
-│   └── graph_traversal/     ⬜ TODO
+│   └── graph_traversal/     ✅ COMPLETE
 ├── big_o_analysis/          ⬜ TODO
-├── design_patterns/         ⬜ TODO
+├── design_patterns/         ✅ COMPLETE
 ├── concurrency/             ⬜ TODO
 ├── system_design/           ⬜ TODO
 └── tests/
@@ -692,9 +698,9 @@ rust/
 │       ├── sorting/         ✅ COMPLETE
 │       ├── searching/       ✅ COMPLETE
 │       ├── dynamic_programming/  ✅ COMPLETE
-│       └── graph_traversal/ ⬜ TODO
+│       └── graph_traversal/ ✅ COMPLETE
 ├── big-o-analysis/          ⬜ TODO
-├── design-patterns/         ⬜ TODO
+├── design-patterns/         ✅ COMPLETE
 ├── concurrency/             ⬜ TODO
 └── system-design/           ⬜ TODO
 ```
@@ -817,11 +823,12 @@ When implementing topics:
 ## Summary Statistics
 
 **Total Topics:** 11
-**Completed:** 8 (Arrays, Linked Lists, Trees, Hash Tables, Sorting, Searching, Dynamic Programming, Graph Traversal)
-**Remaining:** 3 (Big O Analysis, Design Patterns, Concurrency, System Design)
+**Completed:** 9 (Arrays, Linked Lists, Trees, Hash Tables, Sorting, Searching, Dynamic Programming, Graph Traversal, Design Patterns)
+**Remaining:** 3 (Big O Analysis, Concurrency, System Design)
 
 **Data Structures:** ✅ **COMPLETE** (All 4 fundamental data structures implemented)
 **Algorithms:** ✅ **COMPLETE** (All 4 algorithm topics complete: Sorting, Searching, Dynamic Programming, Graph Traversal)
+**Design Patterns:** ✅ **COMPLETE** (All 6 patterns implemented: Singleton, Factory, Decorator, Adapter, Observer, Strategy)
 
 **Total Estimated Files to Create:**
 - Exercise files: ~180 (60 per language × 3 languages)
@@ -836,6 +843,6 @@ When implementing topics:
 
 ---
 
-**Last Updated:** 2025-11-27
-**Status:** All data structures + All algorithms complete (8 of 11 topics), 3 non-core topics remaining
-**Next Recommended Topic:** Big O Analysis or Design Patterns
+**Last Updated:** 2025-11-29
+**Status:** All data structures + All algorithms + Design Patterns complete (9 of 11 topics), 3 remaining
+**Next Recommended Topic:** Big O Analysis, Concurrency, or System Design
