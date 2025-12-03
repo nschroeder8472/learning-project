@@ -1,14 +1,8 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+// Big O Analysis exercises module
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub mod ex1_identify_time_complexity;
+pub mod ex2_space_complexity;
+pub mod ex3_best_worst_average;
+pub mod ex4_recursive_complexity;
+pub mod ex5_compare_algorithms;
+pub mod ex6_optimize_code;
