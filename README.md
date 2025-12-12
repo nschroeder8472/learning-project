@@ -76,6 +76,28 @@ learning-project/
 4. **Run the Tests**: Verify your implementation with the provided test files
 5. **Compare Across Languages**: Try the same problem in different languages to see language-specific approaches
 
+## Using Claude Code as Your Teacher
+
+This repository is designed to work with [Claude Code](https://claude.ai/code) in teacher mode. When you're working through exercises and need guidance:
+
+**To activate teacher mode**, simply tell Claude:
+> "Act as my teacher" or "Help me as a teacher"
+
+**What to expect in teacher mode:**
+- Claude will guide you without giving direct solutions
+- You'll be encouraged to try solving problems yourself first
+- When you find a solution, Claude will help you understand if it's optimal
+- You'll be asked to explain your solutions to reinforce learning
+- Claude will suggest which problems to tackle next based on your progress
+
+**Teacher mode is ideal for:**
+- Getting hints when you're stuck without spoiling the solution
+- Understanding why your solution works (or doesn't)
+- Learning the optimal approach after solving a problem
+- Building problem-solving skills through guided practice
+
+This approach helps you truly learn the concepts rather than just copying solutions.
+
 ## Exercise Difficulty Levels
 
 - **Easy**: Fundamental operations, basic traversals, simple implementations
