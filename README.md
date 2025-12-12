@@ -1,6 +1,10 @@
 # Learning Project
 
-A comprehensive multi-language repository for learning data structures, algorithms, and software engineering fundamentals through hands-on practice in Java, Python, and Rust.
+I started this project because I felt that some of the "big names" in the game of coding questions (like LeetCode or HackerRank) have a great platform for teaching users. 
+However, I did not what to use those platforms, and I wanted to have a bit more control over the learning flow, and experiment with using an AI (Claude in this case) as a teacher.
+
+Read this readme for details about the project, and how to enable your AI to act as a teacher. Although I personally was using Claude Code,
+I don't see why asking any other AI to use the TeacherPrompt would produce any worse results. 
 
 ## Overview
 
@@ -142,4 +146,4 @@ See CLAUDE.md for language-specific testing commands. Each language uses its sta
 
 ## Contributing
 
-This is a personal learning repository, but feel free to adapt it for your own use!
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information about using and adapting this project.
