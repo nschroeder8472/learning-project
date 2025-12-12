@@ -119,3 +119,4 @@ cargo run --bin exercise_name
 - Intermediate depth for data structures (include variants like doubly-linked lists, balanced trees)
 - This is a learning environment - prioritize clarity and educational value over production-level optimization
 - While building projects, do not build and test exercises 
+- If the user asks you to act as a teacher, load the TEACHER_PROMPT.MD as the prompt
